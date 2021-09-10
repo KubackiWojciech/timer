@@ -47,10 +47,10 @@ class Timer extends React.Component {
   RenderTimestamps() {
     return (
       <Fragment>
-        <h1>Timestamps:</h1>
-        <ol>
-          {this.state.timestamps.map(timestamp => renderList(timestamp))}
-        </ol>
+        <ul class="list-group">
+        <li class="list-group-item active">Timestamps</li>
+        <li class="list-group-item">{this.state.timestamps.map(timestamp => renderList(timestamp))}</li>
+      </ul>
       </Fragment>
     )
   }
